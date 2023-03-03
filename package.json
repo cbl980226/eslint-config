@@ -8,6 +8,7 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "release": "standard-version",
+    "publish": "npm publish --access public",
     "format:check": "prettier --check . --ignore-path .gitignore",
     "format:write": "prettier --write . --ignore-path .gitignore",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
@@ -17,6 +18,23 @@
     "test:react": "eslint ./tests/react.tsx --ext .tsx",
     "type-check:vue": "vue-tsc --noEmit -p tsconfig.vue.json",
     "type-check:react": "tsc --noEmit -p tsconfig.react.json"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "vue",
+    "react",
+    "turbo",
+    "nx",
+    "@nrwl/eslint-plugin-nx"
+  ],
+  "author": "cbl980226 (https://github.com/cbl980226)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbl980226/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cbl980226/eslint-config/issues"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
@@ -44,8 +62,7 @@
     "vue-tsc": "^1.2.0"
   },
   "peerDependencies": {
-    "@nrwl/eslint-plugin-nx": "*",
-    "nx": "*"
+    "@nrwl/eslint-plugin-nx": "*"
   },
   "dependencies": {
     "eslint-plugin-vue": "^9.9.0",
