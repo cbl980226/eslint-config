@@ -8,7 +8,6 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "release": "standard-version",
-    "publish": "npm publish --access public",
     "format:check": "prettier --check . --ignore-path .gitignore",
     "format:write": "prettier --write . --ignore-path .gitignore",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
