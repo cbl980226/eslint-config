@@ -27,7 +27,11 @@ module.exports = {
     },
     {
       files: ['*.vue'],
-      extends: ['plugin:vue/vue3-recommended', 'plugin:@nrwl/nx/typescript'],
+      extends: [
+        'plugin:vue/vue3-essential',
+        '@vue/eslint-config-typescript',
+        'plugin:@nrwl/nx/typescript'
+      ],
       parser: 'vue-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser',
