@@ -1,6 +1,6 @@
 {
   "name": "@cbl980226/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "license": "MIT",
   "private": false,
@@ -8,8 +8,8 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "release": "standard-version",
-    "format:check": "prettier --check . --ignore-path .gitignore",
-    "format:write": "prettier --write . --ignore-path .gitignore",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "test": "yarn test:vue && yarn test:react",
     "type-check": "yarn type-check:vue && yarn type-check:react",
