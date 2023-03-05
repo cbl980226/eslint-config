@@ -68,6 +68,7 @@
   "dependencies": {
     "@vue/eslint-config-typescript": "^11.0.2",
     "eslint-plugin-vue": "^9.9.0",
+    "tslib": "^2.5.0",
     "vue-eslint-parser": "^9.1.0"
   },
   "config": {
